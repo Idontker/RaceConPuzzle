@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ger">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Condition Puzzle</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="center header">
+        <p>Die Bank</p>
+        <div class="datenbank">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <p>Kontostand:
+        <div class="konto" id="konto">1000</div>
+        </p>
+    </div>
+    <main>
+        <div class="left">
+            <div class="center">
+                <div class="mitarbeiter" id="m1"></div>
+            </div>
+            <div class="schalter" id="sl">Schalter 1</div>
+            <div class="kontostand button active" id="kl">Kontostand abfragen</div>
+            <div class="abheben button" id="al">Abeheben: 100€</div>
+            <div class="einzahlen button" id="el">Einzahlen: 100€</div>
+            <div class="fertig button" id="fl">Fertig</div>
+        </div>
+        <div class="right">
+            <div class="center">
+                <div class="mitarbeiter" id="m2"></div>
+            </div>
+            <div class="schalter" id="sr">Schalter 2</div>
+            <div class="kontostand button active" id="kr">Kontostand abfragen</div>
+            <div class="abheben button" id="ar">Abeheben: 100€</div>
+            <div class="einzahlen button" id="er">Einzahlen: 100€</div>
+            <div class="fertig button" id="fr">Fertig</div>
+        </div>
+    </main>
+    <div class="center">
+        <div class="bargeld">
+            Dein Bargeld:
+            <div class= "center" id="bar">0</div>
+        </div>
+    </div>
+
+    <script src="buttons.js"></script>
+</body>
+
+</html>

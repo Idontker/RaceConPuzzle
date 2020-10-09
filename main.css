@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 80vw;
+    height: 80vh;
+    padding: 2vh 10vw;
+}
+
+main {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+.left .right {
+    margin: 0 3vw;
+    padding: 2vh 2vw;
+    width: 40vw;
+}
+
+.schalter, .kontostand, .abheben, .einzahlen, .fertig {
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.schalter {
+    margin-bottom: 20px;
+    background-color: darkorange;
+}
+
+.kontostand, .abheben, .einzahlen, .fertig {
+    cursor: default;
+    background-color: gray;
+    opacity: 0.7;
+}
+
+.active {
+    cursor: pointer;
+    background-color: darksalmon;
+    opacity: 1;
+}
+
+.mitarbeiter {
+    border-radius: 40px;
+    height: 40px;
+    width: 40px;
+    background-color: gray;
+    transition: transform 0.75s ease-in;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bargeld {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: green;
+}
+
+/* Server Picture */
+
+.header {
+    flex-direction: column;
+}
+
+.datenbank {
+    background-color: gray;
+    height: 80px;
+    width: 150px;
+}
+
+.line {
+    height: 5px;
+    margin: 8px 5%;
+    width: auto;
+    background-color: white;
+}
